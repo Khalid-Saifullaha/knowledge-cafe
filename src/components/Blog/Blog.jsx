@@ -15,9 +15,9 @@ const Blog = ({blog, handelAddToBookmark}) => {
                    </div>
 
                 </div>
-                <div>
-                    <span>{reading_time} min read</span>
-                    <button onClick={()=>handelAddToBookmark(blog)} className='ml-2 text-2xl text-red-500'><FaRegBookmark></FaRegBookmark></button>
+                <div className='flex items-center'>
+                    <span className='text-2xl'>{reading_time} min read</span>
+                    <button onClick={()=>handelAddToBookmark(blog)} className='ml-2 text-2xl '><FaRegBookmark></FaRegBookmark></button>
                 </div>   
             </div>
             
